@@ -1,31 +1,33 @@
-# clinic_system
 # Clinic Management System
 
-A PHP-based web application for managing clinic operations such as patients, doctors, and appointments.
+# Clinic Management System
+
+A full-featured web-based **Clinic Management System** built to manage patients, appointments, doctors, and clinic operations efficiently. This system provides a responsive web interface and secure backend powered by PHP and MySQL.
 
 ---
 
 ## Tech Stack
 
-- PHP 8.2
-- Apache
-- MySQL
-- Docker
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Containerization:** Docker  
 
 ---
 
-## Build and Run with Docker
-## Run with Docker
+## Getting Started with Docker
 
-### Build
-docker build -t clinic-system .
+Follow these steps to run the Clinic Management System locally using Docker:
 
-### Run
-docker run -d -p 8080:80 --name clinic-system clinic-system
+### 1. Clone the repository
 
-### Open
-http://localhost:8080
+```bash
+git clone https://github.com/yazannazzal321/Clinic-Management-System
+cd Clinic-Management-System
 
-### Stop
-docker stop clinic-system
-docker rm clinic-system
+2. Build the Docker image
+docker build -t clinic_system .
+
+3. Run the Docker container
+docker run -d -p 8080:80 --name clinic_app clinic_system
+The app will be accessible at http://localhost:8080
