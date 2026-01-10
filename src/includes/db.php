@@ -1,10 +1,10 @@
 <?php
-$host = "host.docker.internal";
+$host = "db";        // IMPORTANT (service name in docker-compose)
 $user = "root";
-$pass = "";
-$dbname = "clinic_db";
+$pass = "root";      // MUST match MYSQL_ROOT_PASSWORD in docker-compose.yml
+$db   = "clinic_db";
 
-$conn = new mysqli($host, $user, $pass, $dbname);
+$conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
